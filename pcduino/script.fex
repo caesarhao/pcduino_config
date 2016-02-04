@@ -1,14 +1,23 @@
+; port:<port><mux feature><pullup/down><drive capability><output level> 
+; where:
+; <port> is the port to configure (ie. PH15) 
+; <mux feature> is the function to configure the port for, mux 0 is as input, mux 1 as output and for 2-7 see A10/PIO for details. 
+; <pullup/down> is 0 = disabled; 1 = pullup enabled; 2 = pulldown enabled (only valid when port is an input) 
+; <drive capability> defines the output drive in mA, values are 0-3 corresponding to 10mA, 20mA, 30mA and 40mA. 
+; <output level> sets the initial output level for the port; 0 = low; 1 = high (only valid for outputs) 
+; The <pullup/down> <drive capability> and <output level> can be set to <default> which means don't change. 
+
 [product]
-version = "2.0"
-machine = "pcduino-1.0"
+version = "0.1"
+machine = "A10-pcduino-1.0"
 
 [target]
-boot_clock = 1008
-dcdc2_vol = 1400
-dcdc3_vol = 1250
-ldo2_vol = 3000
-ldo3_vol = 2800
-ldo4_vol = 2800
+boot_clock = 1008 ; MHz
+dcdc2_vol = 1400 ; mV
+dcdc3_vol = 1250 ; mV
+ldo2_vol = 3000 ; mV
+ldo3_vol = 2800 ; mV
+ldo4_vol = 2800; mV
 
 [card_burn_para]
 card_no = 0
