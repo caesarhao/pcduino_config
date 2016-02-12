@@ -982,35 +982,39 @@ gpio_pin_14 = port:PH19<0><1><default><default>
 ; TP37
 gpio_pin_15 = port:PH20<0><1><default><default> 
 
-[sb_pwm0]
-pwm_gpio = port:PH06<1><default><default><default>
+[pwm0_para]
+pwm_used = 1
+pwm_positive = port:PH06<1><default><default><default>
 
-[sb_pwm1]
-pwm_gpio = port:PB02<2><default><default><default>
+[pwm1_para]
+pwm_used = 1
+pwm_positive = port:PB02<2><default><default><default>
 
-[sb_pwm2]
-pwm_gpio = port:PI03<2><default><default><default>
+[pwm2_para]
+pwm_used = 1
+pwm_positive = port:PI03<2><default><default><default>
 
-[sb_pwm3]
-pwm_gpio = port:PH05<1><default><default><default>
+[pwm3_para]
+pwm_used = 1
+pwm_positive = port:PH05<1><default><default><default>
 
 [dvfs_table]
 max_freq = 1008000000
 min_freq = 60000000
-lv_count = 5
+LV_count = 5
 
-lv1_freq = 1056000000
-lv1_volt = 1500
+LV1_freq = 1056000000
+LV1_volt = 1500
 
-lv2_freq = 1008000000
-lv2_volt = 1400
+LV2_freq = 1008000000
+LV2_volt = 1400
 
-lv3_freq = 912000000
-lv3_volt = 1350
+LV3_freq = 912000000
+LV3_volt = 1350
 
-lv4_freq = 864000000
-lv4_volt = 1300
+LV4_freq = 864000000
+LV4_volt = 1300
 
-lv5_freq = 624000000
-lv5_volt = 1250
+LV5_freq = 624000000
+LV5_volt = 1250
 
