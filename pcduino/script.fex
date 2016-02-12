@@ -75,6 +75,8 @@ jtag_ck = port:PB15<3><default><default><default>
 jtag_do = port:PB16<3><default><default><default>
 jtag_di = port:PB17<3><default><default><default>
 
+; [system]
+; recovery_key = port:PH16<0><1><default><default>
 
 [dram_para]
 dram_baseaddr = 0x40000000
